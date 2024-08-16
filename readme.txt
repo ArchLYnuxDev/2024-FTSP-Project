@@ -13,4 +13,13 @@ Installation:
 
   Setting up flutter:
     In the main directory, run the command "flutter create ./flutter_app"
+
+Known Python dependencies:
+  Flask
+  Flask-Session
+  psycopg2
+  regex
+  virtualenv
+  numpy
+  pandas
   
