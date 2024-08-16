@@ -1,0 +1,35 @@
+name: project #Give this a new eventually, currently called project to refer to the main project
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  another_flushbar: ^1.12.30
+  crypt: ^4.3.1
+  http:
+  intl: ^0.19.0
+  dropdown_button2: ^2.3.9
+  geolocator: ^11.1.0
+  geocoding: ^3.0.0
+  flutter_polyline_points:
+  flutter_rating_bar: ^4.0.1
+  flutter_svg:
+  flutter_map: ^6.1.0
+  flutter_map_marker_popup: ^6.1.2
+  flutter_map_tappable_polyline: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/
