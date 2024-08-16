@@ -1,0 +1,54 @@
+
+:7686/login @ GET
+  200
+	No errors
+  201
+	Invalid credentials
+  210
+	Soft error
+  220
+	Database fatal error
+  244
+	Unexpected Server-side error
+
+:7687/getrecommendation @ GET
+  200
+	No errors
+  210
+	Soft error
+  244
+	Unexpected Server-side error
+
+:7687/logout @ GET
+  200
+	No errors
+  210
+	Soft error
+  220 (UNUSED)
+	Database fatal error
+  244
+	Unexpected Server-side error
+
+:7687/register @ POST
+  200
+	No errors
+  201
+	Invalid credentials
+  202
+	Database-related account credentials error
+  210
+	Soft error
+  220
+	Database fatal error
+  244
+	Unexpected Server-side error
+
+:7687/accountdetails @ GET, UPDATE
+  200
+	No errors
+  210
+	Soft error
+  220
+	Database fatal error
+  244
+	Unexpected Server-side error

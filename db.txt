@@ -1,0 +1,31 @@
+use psql to access db
+
+CREATE TABLE userprofile(
+	"User ID" VARCHAR(50) NOT NULL,
+	"Name" VARCHAR(50),
+	age INTEGER,
+	gender VARCHAR(10),
+	race VARCHAR(50),
+	password VARCHAR,
+	email VARCHAR(100),
+	birthdate date,
+	mobilenumber VARCHAR(20),
+	PRIMARY KEY("User ID")
+);
+// password should be encrypted
+CREATE TABLE userfeatures(
+	uid VARCHAR NOT NULL,
+	usertext VARCHAR,
+	"FoodPreference" VARCHAR,
+	"DietaryRestrictions" VARCHAR,
+	"AdditionalInterest" VARCHAR,
+	PRIMARY KEY(uid)
+);
+
+SELECT * FROM information_schema.tables
+WHERE table_schema NOT IN ('information_schema', 'pg_catalog')
+AND table_type = 'BASE TABLE';
+
+// Admin?
+INSERT INTO public.userprofile ("User ID", "Name", age, gender, race, password, email, birthdate, mobilenumber)
+VALUES ('112403023981526631535','Johnny',54,'Male','Chinese','$5$abcdefghijklmnop$/pwAxUkPJVyfB8/VbxB4udaXV9X5ejPT50xaQDBFYw2','Johnny@gmail.com','1970-01-01','91234567')
